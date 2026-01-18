@@ -1,0 +1,91 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>THIRD-EYE | Unveil the Truth Behind Media</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bebas-neue@1.0.0/webfont.css">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary: '#0A0A0A',
+            secondary: '#1A1A1A',
+            beigeCream: '#F5F5DC',
+            beigeGold: '#D4AF37',
+            goldenrod: 'DAA520'
+          },
+          fontFamily: {
+            bebas: ['"Bebas Neue"', 'sans-serif'],
+            inter: ['Inter', 'sans-serif'],
+          },
+          animation: {
+            'glow-pulse': 'glow 3s infinite ease-in-out',
+            'float': 'float 20s infinite linear',
+            'slide-up': 'slideUp 0.5s ease-out forwards',
+          },
+          keyframes: {
+            glow: {
+              '0%, 100%': { filter: 'drop-shadow(0 0 10px rgba(212, 175, 55, 0.4))' },
+              '50%': { filter: 'drop-shadow(0 0 30px rgba(212, 175, 55, 0.8))' },
+            },
+            float: {
+              '0%': { transform: 'translateY(0) translateX(0)', opacity: '0.1' },
+              '33%': { transform: 'translateY(-100px) translateX(50px)', opacity: '0.3' },
+              '66%': { transform: 'translateY(-50px) translateX(-50px)', opacity: '0.2' },
+              '100%': { transform: 'translateY(0) translateX(0)', opacity: '0.1' },
+            },
+            slideUp: {
+              '0%': { transform: 'translateY(100%)', opacity: '0' },
+              '100%': { transform: 'translateY(0)', opacity: '1' },
+            },
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    body {
+      background-color: #0A0A0A;
+      color: #FFFFFF;
+      margin: 0;
+      font-family: 'Inter', sans-serif;
+      overflow-x: hidden;
+    }
+    ::-webkit-scrollbar {
+      width: 8px;
+    }
+    ::-webkit-scrollbar-track {
+      background: #0A0A0A;
+    }
+    ::-webkit-scrollbar-thumb {
+      background: #D4AF37;
+      border-radius: 4px;
+    }
+    .parallax-dot {
+      position: fixed;
+      border-radius: 50%;
+      background: #D4AF37;
+      pointer-events: none;
+      z-index: 0;
+    }
+  </style>
+<script type="importmap">
+{
+  "imports": {
+    "react": "https://esm.sh/react@^19.2.3",
+    "react-dom/": "https://esm.sh/react-dom@^19.2.3/",
+    "react/": "https://esm.sh/react@^19.2.3/"
+  }
+}
+</script>
+<link rel="stylesheet" href="/index.css">
+</head>
+<body>
+  <div id="root"></div>
+<script type="module" src="/index.tsx"></script>
+</body>
+</html>

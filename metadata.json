@@ -1,0 +1,7 @@
+{
+  "name": "THIRD-EYE Deepfake Detection",
+  "description": "An elegant, high-precision media authenticity platform detecting deepfakes in images, videos, and news using simulated advanced ML models.",
+  "requestFramePermissions": [
+    "camera"
+  ]
+}
